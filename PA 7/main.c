@@ -16,17 +16,44 @@ int main(void)
 	srand((unsigned int)time(NULL));
 
 	struct stats user_stats = { '\0', 0 };
-	int interface_option = 0;
+	int interface_option = 0, difficulty = 0;
+	char initials = '\0';
 
-	interface_option = interface_menu();
-	switch (interface_option)
+	do
 	{
-	case 1:
-		interface_info();
 
-	case 2:
+		interface_option = interface_menu();
+		
+		if (interface_option = 1)
+		{
+			interface_info();
+			interface_option = 0;
+			system("pause");
+			system("cls");
+		}
+		else if (interface_option = 2)
+		{
+			enter_initials();
+			interface_option = 0;
+		}
+		
+		else if (interface_option = 3)
+		{
+			difficulty_level();
+			interface_option = 0;
+		}
+		
+		else if (interface_option = 4)
+		{
+			
+			interface_option = 0;
+		}
+		
+		else
+		{
+			break;
+		}
+	} while (interface_option != 5);
 
-
-	}
 	return 0;
 }

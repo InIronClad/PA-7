@@ -23,3 +23,22 @@ int interface_menu(void)
 	return interface_option;
 }
 
+void interface_info(void)
+{
+	printf("How to use the Math Learning Program (MLP):\n");
+}
+
+void enter_initials(void)
+{
+	char initials = '\0';
+
+	printf("Enter your initials:\n");
+	scanf("%s", &initials);
+}
+
+void difficulty_level(void)
+{
+	int difficulty = 0;
+	printf("Select difficulty level (1-5):\n");
+	scanf("%d", &difficulty);
+}
