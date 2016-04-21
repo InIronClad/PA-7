@@ -9,3 +9,16 @@
 
 #include "PA_7.h"
 
+int main(void)
+{
+	FILE *outfile_math_stats = fopen("math.dat", "w");
+
+	srand((unsigned int)time(NULL));
+
+	struct stats user_stats = { '\0', 0 };
+
+	interface_menu();
+
+
+	return 0;
+}

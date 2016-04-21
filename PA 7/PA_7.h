@@ -14,5 +14,14 @@
 #include <stdlib.h>
 #include <time.h>
 
+struct stats
+{
+	char initials;
+	int total_score;
+};
+
+typedef struct stats Stats;
+
+int interface_menu(void);
 
 #endif
