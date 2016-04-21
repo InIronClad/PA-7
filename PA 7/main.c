@@ -16,9 +16,17 @@ int main(void)
 	srand((unsigned int)time(NULL));
 
 	struct stats user_stats = { '\0', 0 };
+	int interface_option = 0;
 
-	interface_menu();
+	interface_option = interface_menu();
+	switch (interface_option)
+	{
+	case 1:
+		interface_info();
+
+	case 2:
 
 
+	}
 	return 0;
 }

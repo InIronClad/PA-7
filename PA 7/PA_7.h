@@ -23,5 +23,13 @@ struct stats
 typedef struct stats Stats;
 
 int interface_menu(void);
+void interface_info(void);
+void enter_initials(void);
+void difficulty_level(void);
+void math_level_1(void);
+void math_level_2(void);
+void math_level_3(void);
+void math_level_4(void); 
+void math_level_5(void);
 
 #endif
